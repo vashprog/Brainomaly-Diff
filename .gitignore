@@ -1,0 +1,108 @@
+# Python cache & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+# C extensions
+*.so
+
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+
+# Conda
+conda-meta/
+.pkgs/
+
+
+# OS / IDE files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.spyderproject
+.spyproject
+.ropeproject
+
+
+# Logs & experiment tracking
+*.log
+logs/
+**/logs/
+neptune/
+wandb/
+
+
+# Jupyter
+.ipynb_checkpoints/
+
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+pip-wheel-metadata/
+.installed.cfg
+MANIFEST
+
+# Unit tests / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+nosetests.xml
+coverage.xml
+
+
+# Dataset & results (CRITICAL)
+data/
+MedicalData/
+**/MedicalData/
+**/MedicalData/**
+
+
+# Training outputs
+models/
+result/
+results/
+samples/
+logs/
+**/models/
+**/result/
+**/samples/
+**/logs/
+
+
+# Experiment CSVs (metrics)
+*.csv
+*.xlsx
+
+
+# Exceptions (keep)
+!environment.yml
+!README.md
+!LICENSE
+!.gitignore
+
+
+# Shell scripts (keep)
+!*.sh
+
+
+# Python source (keep)
+!*.py
+
+
+# Images for README (keep)
+!imgs/
+!imgs/**
