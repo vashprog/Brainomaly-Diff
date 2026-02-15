@@ -68,6 +68,10 @@ We introduce an **Attention-Based Residual Diffusion Refiner** that operates on 
 
 ## Architecture Overview
 
+<p align="center">
+  <img src="assets/architecture.png" width="800"/>
+</p>
+
 Brainomaly-Diff follows a **two-stage anomaly detection pipeline**:
 
 1. **Coarse Reconstruction (Brainomaly GAN)**  
@@ -223,6 +227,24 @@ If your dataset is of 2D modalities, like X-ray, then you can just put your imag
 - Inductive testing: `bash test_inductive.sh MedicalData 100000`
 - Transductive testing: `bash test_transductive.sh MedicalData 100000`
 - AUCp calculation: `bash test_aucp.sh MedicalData 100000`
+
+## Reproducibility
+
+To reproduce the results reported in the paper:
+
+1. Download the dataset from Kaggle:
+   https://www.kaggle.com/datasets/lukechugh/best-alzheimer-mri-dataset-99-accuracy/data
+
+2. Organize the dataset into the required structure under:
+   data/MedicalData/
+
+3. Train the model:
+   bash train.sh MedicalData
+
+4. Evaluate using the selected checkpoint (e.g., 100000 iterations):
+   bash test_aucp.sh MedicalData 100000
+
+
 
 ## Results Summary
 
