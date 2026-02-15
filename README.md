@@ -69,7 +69,7 @@ We introduce an **Attention-Based Residual Diffusion Refiner** that operates on 
 ## Architecture Overview
 
 <p align="center">
-  <img src="assets/architecture.png" width="800"/>
+  <img src="assets/architecture.jpg" width="800"/>
 </p>
 
 Brainomaly-Diff follows a **two-stage anomaly detection pipeline**:
